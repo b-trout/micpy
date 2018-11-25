@@ -4,7 +4,7 @@ and return as flat DataFrame.
 """
 
 import pandas as pd
-from get_mic_df import get_mic_df
+from .get_mic_df import get_mic_df
 
 
 def get_group_mic_df(df, group_key, **kwargs):
