@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Learn more: https://github.com/kennethreitz/setup.py
-
 from setuptools import setup, find_packages
 
 
@@ -12,13 +10,14 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
+    name='micpy',
     version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    description='Compute MIC and its related indicators',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Yuta Masubuchi',
+    author_email='yuuta.masubuti@gmail.com',
+    install_requires=['pandas', 'minepy'],
+    url='https://github.com/b-traut/micpy',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )
